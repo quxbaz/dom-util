@@ -4,7 +4,7 @@ Utilities for using the DOM.
 
 ## API
 
-### fireOnce
+### fireOnce(element, event, handler)
 Fires an handler once, then detaches it.
 ```javascript
 // Example
