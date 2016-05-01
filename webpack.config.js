@@ -36,7 +36,7 @@ var config = {
     root: resolve(__dirname),
     extensions: ['', '.js'],
     alias: {
-      // APP_NAME: resolve(__dirname)
+      'dom-util': resolve(__dirname)
     }
   }
 
