@@ -5,10 +5,8 @@ Utilities for using the DOM.
 ## API
 
 ### fireOnce(element, event, handler)
-Fires an handler once, then detaches it.
+Fires an handler once, then detaches it. Example:
 ```javascript
-// Example
-
 const el = document.getElementById('my-button')
 let i = 0
 fireOnce(el, 'click', () => i++)
