@@ -20,8 +20,6 @@ var config = {
         loader: 'babel',
         include: [
           resolve(__dirname, 'index'),
-          resolve(__dirname, 'lib'),
-          resolve(__dirname, 'src'),
           resolve(__dirname, 'tests')
         ],
         query: {
