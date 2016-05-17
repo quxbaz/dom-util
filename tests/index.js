@@ -4,6 +4,7 @@ import {fireOnce} from 'dom-util'
 const doc = document
 
 describe("fireOnce()", () => {
+
   it("triggers an event handler only once.", () => {
     let el = doc.createElement('button')
     let i = 0
@@ -12,6 +13,16 @@ describe("fireOnce()", () => {
     el.click()
     expect(i).toEqual(1)
   })
+
+  it("Returns the wrapper function.", () => {
+    let el = doc.createElement('button')
+    let i = 0
+    const fn = fireOnce(el, 'click', () => i++)
+    el.removeEventListener('click', fn)
+    el.click()
+    expect(i).toEqual(0)
+  })
+
 })
 
 
